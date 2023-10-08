@@ -9,5 +9,16 @@ int userNumber = Convert.ToInt32(Console.ReadLine());
 Convert.ToInt32() - преобразование считанной информаии (получается в формате string) в формат int
 Console.ReadLine() - чтение вводимой в терминал информации ()всегда происходит в формате string
 */
+/*
+Правильным решением будет объявление новой переменной для возведения в квадрат,
+так как, если в последующем появится необходимость использования вычисленного квадрата,
+такой возможности не будет.
+*/
+int result = userNumber * userNumber;
+Console.Write("Вывод результата вычислений: ");
+Console.WriteLine(result);
+
+/*
 Console.Write("Результат выполнения программы: ");
 Console.WriteLine(userNumber * userNumber);
+*/
