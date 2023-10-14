@@ -13,8 +13,8 @@ int FirstPosition(int number) {
     int firstPosition = number / 100;
     return firstPosition;
 }
-int ThirdPosition(int nuber) {
-    int thirdPosition = nuber % 10;
+int ThirdPosition(int number) {
+    int thirdPosition = number % 10;
     return thirdPosition;
 }
 
