@@ -13,6 +13,7 @@ int numberTwo = Convert.ToInt32(Console.ReadLine());
 int Multiple(int arg1, int arg2) {
     int multiple = arg1 % arg2;
     if (multiple > 0) {
+        Console.Write($"Число {arg1} не кратно {arg2}, остаток равен: ");
         return multiple;
     } else {
         Console.WriteLine($"{arg1} кратно {arg2}");
