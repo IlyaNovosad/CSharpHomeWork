@@ -12,6 +12,7 @@ int NewNumber(){
         return arg;
     }
 }
+/*
 int Pal(int arg){
     int newArg = 0;
     for (int i = arg; i > 0; i /= 10){
@@ -25,5 +26,18 @@ int Pal(int arg){
         return 0;
     }
 }
+*/
+
+void Pal(int arg){
+int newArg = 0;
+for (int i = arg; i > 0; i /=10){
+    newArg = newArg * 10 + i % 10;
+    }
+    if (newArg == arg){
+        System.Console.WriteLine("Это палиндром.");
+    } else {
+        System.Console.WriteLine("Это не палиндром");
+    }
+}
 int number = NewNumber();
-System.Console.WriteLine(Pal(number));
+Pal(number);
